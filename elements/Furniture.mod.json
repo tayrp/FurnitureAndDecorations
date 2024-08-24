@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "Furniture",
+    "icon": {
+      "value": "Blocks.QUARTZ_STAIRS"
+    },
+    "showSearch": false
+  }
+}

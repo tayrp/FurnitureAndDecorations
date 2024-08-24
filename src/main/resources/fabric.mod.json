@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "tees_furniture",
+  "version": "1.0.0",
+  "name": "Tee's Furniture & Decorations",
+  "authors": [
+    "tay, MCreator"
+  ],
+  "contact": {
+    "homepage": "https://mcreator.net",
+    "sources": ""
+  },
+  "license": "Not specified",
+  "accessWidener": "tees_furniture.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mcreator.teesfurniture.TeesFurnitureMod"
+    ],
+    "client": [
+      "net.mcreator.teesfurniture.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  }
+}
