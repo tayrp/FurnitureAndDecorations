@@ -16,6 +16,7 @@ import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import net.mcreator.teesfurniture.init.TeesFurnitureModTabs;
+import net.mcreator.teesfurniture.init.TeesFurnitureModBlocks;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -28,6 +29,9 @@ public class TeesFurnitureMod implements ModInitializer {
 		LOGGER.info("Initializing TeesFurnitureMod");
 
 		TeesFurnitureModTabs.load();
+
+		TeesFurnitureModBlocks.load();
+		TeesFurnitureModItems.load();
 
 	}
 }

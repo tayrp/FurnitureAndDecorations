@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tees_furniture:block/texture",
+    "up": "tees_furniture:block/texture",
+    "north": "tees_furniture:block/texture",
+    "east": "tees_furniture:block/texture",
+    "south": "tees_furniture:block/texture",
+    "west": "tees_furniture:block/texture",
+    "particle": "tees_furniture:block/texture"
+  },
+  "render_type": "cutout_mipped"
+}

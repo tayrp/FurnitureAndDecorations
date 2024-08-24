@@ -8,7 +8,8 @@
       "registry_name": "furniture",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/CreativeTabs"
     },
     {
       "name": "Decorations",
@@ -18,7 +19,24 @@
       "registry_name": "decorations",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/CreativeTabs"
+    },
+    {
+      "name": "TARDISDecoration",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tardis_decoration",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tees_furniture/models/block/tardis_decoration.json",
+          "src/main/resources/assets/tees_furniture/models/item/tardis_decoration.json",
+          "src/main/resources/assets/tees_furniture/blockstates/tardis_decoration.json",
+          "src/main/java/net/mcreator/teesfurniture/block/TARDISDecorationBlock.java"
+        ]
+      },
+      "path": "~/DoctorWho"
     }
   ],
   "variable_elements": [],
@@ -28,12 +46,38 @@
   "language_map": {
     "en_us": {
       "item_group.tees_furniture.furniture": "Furniture",
+      "block.tees_furniture.tardis_decoration": "TARDIS Decoration",
       "item_group.tees_furniture.decorations": "Decorations"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "CreativeTabs",
+        "children": []
+      },
+      {
+        "name": "Chairs",
+        "children": []
+      },
+      {
+        "name": "Tables",
+        "children": []
+      },
+      {
+        "name": "Paintings",
+        "children": []
+      },
+      {
+        "name": "Lights",
+        "children": []
+      },
+      {
+        "name": "DoctorWho",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "tees_furniture",
