@@ -37,6 +37,17 @@
         ]
       },
       "path": "~/DoctorWho"
+    },
+    {
+      "name": "TestingTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/CreativeTabs/Testing"
     }
   ],
   "variable_elements": [],
@@ -47,7 +58,8 @@
     "en_us": {
       "item_group.tees_furniture.furniture": "Furniture",
       "block.tees_furniture.tardis_decoration": "TARDIS Decoration",
-      "item_group.tees_furniture.decorations": "Decorations"
+      "item_group.tees_furniture.decorations": "Decorations",
+      "item_group.tees_furniture.testing_tab": "Tee\u0027s Testing"
     }
   },
   "foldersRoot": {
@@ -55,7 +67,12 @@
     "children": [
       {
         "name": "CreativeTabs",
-        "children": []
+        "children": [
+          {
+            "name": "Testing",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Chairs",
@@ -75,6 +92,10 @@
       },
       {
         "name": "DoctorWho",
+        "children": []
+      },
+      {
+        "name": "Testing",
         "children": []
       }
     ]

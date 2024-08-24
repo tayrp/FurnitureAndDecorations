@@ -22,15 +22,20 @@ import java.util.List;
 import java.util.Collections;
 
 public class TARDISDecorationBlock extends Block {
-	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(1f, 10f);
+	public static BlockBehaviour.Properties PROPERTIES = BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false);
 
 	public TARDISDecorationBlock() {
 		super(PROPERTIES);
 	}
 
 	@Override
+	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
+		return true;
+	}
+
+	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
+		return 0;
 	}
 
 	@Override
@@ -43,6 +48,6 @@ public class TARDISDecorationBlock extends Block {
 
 	@Environment(EnvType.CLIENT)
 	public static void clientInit() {
-		BlockRenderLayerMap.INSTANCE.putBlock(TeesFurnitureModBlocks.TARDIS_DECORATION, RenderType.cutoutMipped());
+		BlockRenderLayerMap.INSTANCE.putBlock(TeesFurnitureModBlocks.TARDIS_DECORATION, RenderType.solid());
 	}
 }
